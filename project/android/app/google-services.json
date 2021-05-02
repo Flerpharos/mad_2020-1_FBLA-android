@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1077078688052",
+    "firebase_url": "https://fbla2020-mad-mhs--trampoline.firebaseio.com",
+    "project_id": "fbla2020-mad-mhs--trampoline",
+    "storage_bucket": "fbla2020-mad-mhs--trampoline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077078688052:android:87e69647b6c8970135e561",
+        "android_client_info": {
+          "package_name": "app.flerp.fbla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077078688052-m83dkie7h8n87dt805mc5cif7ot6ivqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.flerp.fbla",
+            "certificate_hash": "84cb00cd760246d1a55c5a273d1c50b7cad6b5f1"
+          }
+        },
+        {
+          "client_id": "1077078688052-3b0bn0ii2nddsj5d6mq8p1pnohh3ue48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4mpUhvU3Zm-1wq9ztWLTNL1FYhhan1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077078688052-3b0bn0ii2nddsj5d6mq8p1pnohh3ue48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

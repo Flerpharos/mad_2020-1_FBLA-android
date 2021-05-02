@@ -1,2 +1,5 @@
-# mad_2020-1_FBLA-android
-Team 2 Middleton FBLA Mobile Application Development Android Flutter Build, 2020 &amp; 2021
+# Mobile Application Development | Android App
+## Christoph Li, Niko Krinos, Shivram Sundar 
+
+This Document will detail how to add to the project.
+
