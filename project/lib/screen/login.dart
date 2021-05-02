@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
             switch (val.state) {
               case States.EMAIL:
                 val.initControllers();
-                Get.to(Padding(
+                return Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -118,9 +118,7 @@ class LoginScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                ));
-                return Placeholder();
-
+                );
               case States.PICKER:
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
