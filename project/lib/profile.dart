@@ -12,7 +12,7 @@ class Profile {
   final String imageURL;
 }
 
-
+// Widget for List of Profiles //
 Widget build(BuildContext context) {
   return ListView(
     padding: const EdgeInsets.all(8), // Placeholder from documentation
@@ -38,6 +38,59 @@ Widget build(BuildContext context) {
             )
           ]
         )
+      ),
+    ],
+  );
+}
+
+//TODO: Add info from Firebase//
+// Widget for viewing Profiles in-depth //
+Widget build(BuildContext context) {
+  return Container(
+    children: <Widget>[
+      Row(
+        children: [
+          Column(
+            child: Text(
+              'Name:'
+
+            ),
+          ),
+          Column(
+            child: Text(
+              'Bio:'
+          
+            ),
+          Column(
+            child: Text(
+              'Description:'
+          
+            ),
+          ),
+          Column(
+            child: Text(
+              'Age:'
+          
+            ),
+          ),
+          Column(
+            child: Text(
+              'Phone Number:'
+          
+            ),
+          ),
+          Column(
+            child: Text(
+              'Email:'
+          
+            ),
+          ),
+          Column(
+            children: [
+              // Sliders for showing Email, phone#, etc. //
+            ]
+          )
+        ]
       ),
     ],
   );
