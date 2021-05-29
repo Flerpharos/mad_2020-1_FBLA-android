@@ -45,7 +45,7 @@ class Profile {
   final String imageURL;
 }
 
-
+// Widget for List of Profiles //
 Widget build(BuildContext context) {
   return ListView(
     padding: const EdgeInsets.all(8), // Placeholder from documentation
@@ -78,6 +78,7 @@ Widget build(BuildContext context) {
 
 //TODO: Add info from Firebase//
 // Widget for viewing Profiles in-depth //
+<<<<<<< HEAD
 class _ProfileView extends State<ProfileView> {
   Map<String, bool> values = {
     'email': false,
@@ -157,6 +158,6 @@ class _ProfileView extends State<ProfileView> {
             )
         ),
       ],
-    );
+    )]);
   }
 }
