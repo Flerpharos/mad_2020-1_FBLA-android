@@ -1,6 +1,39 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:supercharged/supercharged.dart';
+
+// Testing equipment temporary
+void main() {
+  runApp( const TestApp);
+}
+
+class TestApp extends StatelessWidget {
+  const TestApp({Key? key}) : super(key: key);
+  static const String _title = 'Profile Test';
+  @override 
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: _title,
+      home: Scaffold(
+        appBar: AppBar(title: const Text(_title)),
+        body: Center(
+          child: ProfileView,
+        )
+      )
+    )
+  }
+}
+
+//TEMPORARY ^^^^^^
+
+class ProfileView extends StatefulWidget {
+  const ProfileView({Key? key}) : super(key: key);
+
+  @override
+  State<ProfileView> createState() => _ProfileView();
+}
 
 class Profile {
   const Profile({this.name, this.description, this.bio, this.age, this.imageUrl});
@@ -41,4 +74,89 @@ Widget build(BuildContext context) {
       ),
     ],
   );
+}
+
+//TODO: Add info from Firebase//
+// Widget for viewing Profiles in-depth //
+class _ProfileView extends State<ProfileView> {
+  Map<String, bool> values = {
+    'email': false,
+    'phone': false,
+    'age': false,
+  };
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      children: <Widget>[
+        Row(
+          children: [
+            Column(
+              children: [
+                Text(
+                  'Name:'
+
+                ),
+              ]
+            ),
+            Column(
+              children: [
+                Text(
+                  'Bio:'
+
+                ),
+              ]
+            Column(
+               children: [
+                Text(
+                  'Description:'
+
+                ),
+              ]
+            ),
+            Column(
+               children: [
+                Text(
+                  'Age:'
+
+                ),
+              ]
+            ),
+            Column(
+               children: [
+                Text(
+                  'Phone Number:'
+
+                ),
+              ]
+            ),
+            Column(
+              children: [
+                Text(
+                  'Email:'
+
+                ),
+              ]
+            ),
+            Column(
+              children: [
+                ListView(
+                  children: values.keys.map((String key) {
+                      return new CheckboxListTile(
+                        title: new Text(key),
+                        value: values[key],
+                        onChanged: (bool value) {
+                          setState(() {
+                            values[key] = value;
+                          });
+                        },
+                      );
+                  }).toList(),
+                )
+                // Sliders for showing Email, phone#, etc. //
+              ]
+            )
+        ),
+      ],
+    );
+  }
 }
