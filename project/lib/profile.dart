@@ -78,7 +78,6 @@ Widget build(BuildContext context) {
 
 //TODO: Add info from Firebase//
 // Widget for viewing Profiles in-depth //
-<<<<<<< HEAD
 class _ProfileView extends State<ProfileView> {
   Map<String, bool> values = {
     'email': false,
@@ -141,6 +140,7 @@ class _ProfileView extends State<ProfileView> {
             Column(
               children: [
                 ListView(
+                  // Sliders for showing Email, phone#, etc. //
                   children: values.keys.map((String key) {
                       return new CheckboxListTile(
                         title: new Text(key),
@@ -153,7 +153,6 @@ class _ProfileView extends State<ProfileView> {
                       );
                   }).toList(),
                 )
-                // Sliders for showing Email, phone#, etc. //
               ]
             )
         ),
