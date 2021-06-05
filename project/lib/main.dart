@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'profile.dart';
+/*
 import 'screen/app.dart';
 import 'screen/home.dart';
 import 'screen/login.dart';
+
 
 void main() {
   runApp(GetMaterialApp(
@@ -16,4 +18,9 @@ void main() {
         '/signup': (ctx) => Placeholder(),
         /* Add More routes here */
       }));
+}
+*/
+
+void main() {
+  runApp(Home());
 }
